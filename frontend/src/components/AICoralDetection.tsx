@@ -276,11 +276,11 @@ export default function AICoralDetection() {
       setProgress(95);
       
       // Generate species data
-      const speciesDetected = SAMPLE_SPECIES.map(s => ({
+      const speciesDetected: DetectionResult[] = SAMPLE_SPECIES.map(s => ({
         ...s,
         count: Math.floor(Math.random() * 30) + 5,
         confidence: Math.max(0.75, s.confidence - Math.random() * 0.12),
-        health: overallHealth > 60 ? 'healthy' : overallHealth > 40 ? 'stressed' : 'bleached' as const
+        health: (overallHealth > 60 ? 'healthy' : overallHealth > 40 ? 'stressed' : 'bleached') as DetectionResult['health']
       }));
       
       const processingTime = (performance.now() - startTime) / 1000;
