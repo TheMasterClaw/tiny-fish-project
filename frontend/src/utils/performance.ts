@@ -27,7 +27,7 @@ interface PerformanceReport {
  */
 export function usePerformanceMonitor(componentName: string) {
   const renderCount = useRef(0);
-  const mountTime = useRef<number>();
+  const mountTime = useRef<number | undefined>(undefined);
   const metricsRef = useRef<PerformanceMetrics>({ renderCount: 0 });
 
   useEffect(() => {
