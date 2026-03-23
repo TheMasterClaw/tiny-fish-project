@@ -1,0 +1,18 @@
+{
+  "outputDirectory": "build",
+  "rewrites": [
+    { "source": "/", "destination": "/landing.html" },
+    { "source": "/app", "destination": "/build/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/build/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
