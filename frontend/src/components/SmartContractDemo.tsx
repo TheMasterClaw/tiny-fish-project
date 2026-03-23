@@ -359,7 +359,7 @@ export default function SmartContractDemo() {
                       <div className="text-green-400">&gt; Block Number: #12345678</div>
                       <div className="text-green-400">&gt; Gas Used: 82,451</div>
                       <div className="text-green-400">&gt; Status: Success ✅</div>
-                      <div className="text-indigo-400 mt-2">&gt; View on Explorer: <a href="#" className="underline">BaseScan</a></div>
+                      <div className="text-indigo-400 mt-2">&gt; View on Explorer: <a href="https://basescan.org" target="_blank" rel="noopener noreferrer" className="underline">BaseScan</a></div>
                     </>
                   )}
                 </div>

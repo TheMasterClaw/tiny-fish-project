@@ -4,19 +4,11 @@ import {
   TrendingUp, 
   TrendingDown,
   Globe, 
-  Users, 
   TreePine,
   Droplets,
   Thermometer,
   Wind,
-  AlertTriangle,
-  CheckCircle,
-  Clock,
-  MapPin,
-  BarChart3,
-  PieChart,
-  ArrowUpRight,
-  ArrowDownRight
+  AlertTriangle
 } from 'lucide-react';
 
 interface Metric {

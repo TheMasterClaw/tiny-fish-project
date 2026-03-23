@@ -1,22 +1,15 @@
 import React, { useState } from 'react';
-import { 
-  Trophy, 
-  Medal, 
-  Star, 
+import {
+  Trophy,
   Flame,
   Target,
   Zap,
-  Globe,
-  Fish,
   TreePine,
   Users,
   TrendingUp,
-  Award,
   Crown,
   Shield,
   Heart,
-  Share2,
-  ChevronUp,
   CheckCircle
 } from 'lucide-react';
 
@@ -96,16 +89,6 @@ export default function GuardianLeaderboard() {
   const [activeTab, setActiveTab] = useState<'leaderboard' | 'challenges' | 'badges'>('leaderboard');
   const [selectedGuardian, setSelectedGuardian] = useState<Guardian | null>(null);
   const [filter, setFilter] = useState<'all' | 'weekly' | 'monthly'>('all');
-
-  const getTierIcon = (tier: string) => {
-    switch (tier) {
-      case 'diamond': return <Crown className="w-5 h-5" />;
-      case 'platinum': return <Award className="w-5 h-5" />;
-      case 'gold': return <Medal className="w-5 h-5" />;
-      case 'silver': return <Star className="w-5 h-5" />;
-      default: return <Shield className="w-5 h-5" />;
-    }
-  };
 
   const getRarityColor = (rarity: string) => {
     switch (rarity) {
