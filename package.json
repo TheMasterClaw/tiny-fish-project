@@ -14,7 +14,7 @@
     "frontend:build": "cd frontend && npm run build",
     "frontend:deploy": "cd frontend && npm run deploy",
     "build": "cd frontend && npm install && npm run build",
-    "vercel-build": "cd frontend && npm install --legacy-peer-deps && npm run build && cp -r build/* ../build/"
+    "vercel-build": "cd frontend && npm install --legacy-peer-deps && npm run build && cp -r build/* ../build/ && cp ../landing.html ../build/"
   },
   "repository": {
     "type": "git",

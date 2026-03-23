@@ -2,11 +2,11 @@
   "outputDirectory": "build",
   "rewrites": [
     { "source": "/", "destination": "/landing.html" },
-    { "source": "/app", "destination": "/build/index.html" }
+    { "source": "/landing", "destination": "/landing.html" }
   ],
   "headers": [
     {
-      "source": "/build/(.*)",
+      "source": "/static/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
