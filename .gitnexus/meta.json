@@ -1,0 +1,13 @@
+{
+  "repoPath": "/home/holyspirit/.openclaw/workspace/tiny-fish-project",
+  "lastCommit": "51cc5bdf93e2390c5996132a060c57bebd17028b",
+  "indexedAt": "2026-03-22T10:22:06.429Z",
+  "stats": {
+    "files": 58,
+    "nodes": 1546,
+    "edges": 5720,
+    "communities": 127,
+    "processes": 135,
+    "embeddings": 0
+  }
+}

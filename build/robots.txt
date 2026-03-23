@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://coralguard.org/sitemap.xml
+
+# Crawl rate
+Crawl-delay: 1
+
+# Disallow patterns
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
